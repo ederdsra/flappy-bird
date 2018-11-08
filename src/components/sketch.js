@@ -44,7 +44,7 @@ export default function (sketch) {
   }
 
   sketch.keyPressed = function (event) {
-    if (event.key === 'a') {
+    if (event.key === ' ') {
       bird.up()
     }
     console.log(event.key)

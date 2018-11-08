@@ -8,11 +8,14 @@ export default class Bird {
     this.gravity = 0.7
     this.lift = -12
     this.velocity = 0
+
+    this.birdImg = this.sketch.loadImage(require('../assets/neldrake.png'))
   }
 
   show = function () {
     this.sketch.fill(255)
-    this.sketch.ellipse(this.x, this.y, 32, 32)
+    this.sketch.image(this.birdImg, this.x, this.y, 32, 32)
+    // this.sketch.ellipse(this.x, this.y, 32, 32)
   }
 
   up = function () {
